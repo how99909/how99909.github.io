@@ -19,6 +19,8 @@
     		const URL = "./my_model/";
     		let model, webcam, ctx, labelContainer, maxPredictions;
 
+		labelContainer.addEventListener("DOMContentLoaded", init);
+		
     		async function init() {
         			const modelURL = URL + "model.json";
         			const metadataURL = URL + "metadata.json";

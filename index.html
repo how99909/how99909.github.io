@@ -19,9 +19,9 @@
     		const URL = "./my_model/";
     		let model, webcam, ctx, labelContainer, maxPredictions;
 
-		labelContainer.addEventListener("DOMContentLoaded", init);
+		//labelContainer.addEventListener("DOMContentLoaded", init);
 		
-    		async function init() {
+    		//async function init() {
         			const modelURL = URL + "model.json";
         			const metadataURL = URL + "metadata.json";
 
@@ -47,7 +47,7 @@
         			for (let i = 0; i < maxPredictions; i++) { // and class labels
             			labelContainer.appendChild(document.createElement("div"));
         			}
-    		}
+    		//}
 
     		async function loop(timestamp) {
         			webcam.update(); // update the webcam frame

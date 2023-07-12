@@ -50,7 +50,6 @@
     		}
 
     		async function loop(timestamp) {
-				document.write("timestamp:"+typeof(timestamp));
         			webcam.update(); // update the webcam frame
         			await predict();
         			window.requestAnimationFrame(loop);
@@ -74,7 +73,6 @@
    		}
 
     		function drawPose(pose) {
-				document.write("pose:"+typeof(pose));
         			if (webcam.canvas) {
             				ctx.drawImage(webcam.canvas, 0, 0);
             				// draw the keypoints and skeleton

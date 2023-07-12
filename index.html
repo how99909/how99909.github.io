@@ -17,6 +17,7 @@
 
     		// the link to your model provided by Teachable Machine export panel
     		const URL = "./my_model/";
+		const test = [];
     		let model, webcam, ctx, labelContainer, maxPredictions;
 
 		//labelContainer.addEventListener("DOMContentLoaded", init);
@@ -70,6 +71,7 @@
 
         			// finally draw the poses
         			drawPose(pose);
+				const test = labelContainer.childNodes
    		}
 
     		function drawPose(pose) {
